@@ -45,9 +45,9 @@ class Smartbill
     const DEBUG_ON_ERROR = false; // use this only in development phase; DON'T USE IN PRODUCTION !!!
     private $hash = '';
 
-    public function __construct($user, $token)
+    public function __construct()
     {
-        $this->hash = base64_encode($user . ':' . $token);
+        $this->hash = base64_encode(config('smartbill.username'). ':' . config('smartbill.token'));
     }
 
     private function _cURL($url, $data, $request, $headAccept)
