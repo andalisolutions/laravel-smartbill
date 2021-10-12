@@ -4,7 +4,6 @@ namespace Andali\Smartbill;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Andali\Smartbill\Commands\SmartbillCommand;
 
 class SmartbillServiceProvider extends PackageServiceProvider
 {
