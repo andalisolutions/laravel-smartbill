@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "andalisolutions/laravel-smartbill",
+    "description": "This is my package laravel-smartbill",
     "keywords": [
-        ":vendor_name",
+        "andalisolutions",
         "laravel",
-        ":package_slug"
+        "laravel-smartbill"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/andalisolutions/laravel-smartbill",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Andrei Ciungulete",
+            "email": "andrei.ciungulete@andali.ro",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Andali\\Smartbill\\": "src",
+            "Andali\\Smartbill\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Andali\\Smartbill\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Andali\\Smartbill\\SmartbillServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "Smartbill": "Andali\\Smartbill\\SmartbillFacade"
             }
         }
     },
