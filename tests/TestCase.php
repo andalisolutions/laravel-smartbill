@@ -2,9 +2,9 @@
 
 namespace Andali\Smartbill\Tests;
 
+use Andali\Smartbill\SmartbillServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Andali\Smartbill\SmartbillServiceProvider;
 
 class TestCase extends Orchestra
 {
